@@ -966,7 +966,7 @@ margin-left: 16px
 }
 
 .modal-window-input:focus+.window-form-svg {
-    fill: var(--ocean);
+    fill: var(--iris);
 }
 
 
