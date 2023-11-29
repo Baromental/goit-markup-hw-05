@@ -846,6 +846,7 @@ margin-left: 16px
 .modal-window {
     min-width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
     border-radius: 4px;
     background-color: var(--modal-bg);
 
@@ -901,26 +902,26 @@ margin-left: 16px
 }
 
 
-
-
 .modal-window-title {
-    width: 298px;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.16;
-    /* 116.667% */
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+    width: 360px;
+    color: var(--navy-blue);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1,5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .modal-window-input-wrapper {
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
+
 
 .modal-window-input-container {
     position: relative;
 }
+
 
 .modal-window-lable {
     display: block;
@@ -929,6 +930,7 @@ margin-left: 16px
     font-size: 14px;
     letter-spacing: -0.28px;
 }
+
 
 .modal-window-input {
     outline: transparent;
@@ -939,6 +941,7 @@ margin-left: 16px
     padding-left: 62px;
     border: 1.5px solid rgba(17, 17, 17, 0.3);
 }
+
 
 .modal-window-input:focus,
 .comment-text-area:focus {
