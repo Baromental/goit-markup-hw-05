@@ -967,37 +967,52 @@ margin-left: 16px
     fill: var(--ocean);
 }
 
+
+.modal-window-input-wrapper-comment{
+    margin-bottom: 16px
+}
+
+
 .comment-text-area {
     width: 100%;
-    height: 137px;
-    border: var(--light-slate);
-    border-radius: 13px;
+    height: 120px;
+    color: rgba(46, 47, 66, 0.4);
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17px;
+    letter-spacing: 0.04em;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
     resize: none;
     outline: 0;
-    padding: 22px 24px;
-
-    font-size: 18px;
-    letter-spacing: -0.36px;
+    padding: 8px 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-text-area::placeholder {
-    color: rgba(64, 64, 64, 0.3);
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .check-box-container {
-    margin-bottom: 42px;
+    margin-bottom: 24px;
 }
 
 .privacy-policy-label {
-    display: flex;
+    display: block;
     align-items: center;
-    color: rgba(64, 64, 64, 0.6);
-    font-size: 14px;
-    letter-spacing: -0.28px;
+    color: var(--light-slate);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .privacy-policy-link {
-    color: var(--ocean);
+    color: var(--iris);
 }
 
 .our-check-box {
@@ -1005,11 +1020,14 @@ margin-left: 16px
     justify-content: center;
     align-items: center;
     margin-right: 12px;
-    width: 20px;
-    height: 20px;
-    border-radius: 6px;
-    border: var(--light-slate);
-    fill: var(--white);
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-policy-input:focus+.privacy-policy-label .our-check-box {
@@ -1017,16 +1035,29 @@ margin-left: 16px
 }
 
 .privacy-policy-input:checked+.privacy-policy-label .our-check-box {
+    fill: var(--cloud);
     background-color: var(--ocean);
     border: none;
 }
 
 .submit-form-but {
+    display: block;
+    min-width: 169px;
+    height: 56px;
     padding: 14px 40px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+
+
     border: none;
-    border-radius: 15px;
+    border-radius: 4px;
     color: var(--white);
     background-color: var(--iris);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-form-but:hover,
