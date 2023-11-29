@@ -948,10 +948,7 @@ margin-left: 16px
 }
 
 
-.modal-window-input:focus{
-    fill: var(--iris);
-    border-color: var(--iris);
-}
+.modal-window-input:focus,
 .comment-text-area:focus {
     border-color: var(--iris);
 }
